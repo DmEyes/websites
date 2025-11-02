@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Sans:wght@200..800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/project2/css/default.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-danger mb-4">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                DEMIAN
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ervaring.html">Ervaring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hobbys.html">Hobbys</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <h1 class="mb-4">Contact</h1>
+        <div class="row mb-4">
+            <div class="col col-sm-8 me-4">
+                <ul class="biggerlist">
+                    <li>
+                        Email:
+                        <a href="mailto:demian.hendrix@gmail.com">demian.hendrix@gmail.com</a>
+                        of
+                        <a href="mailto:demian.hendrix@student.thomasmore.be">demian.hendrix@student.thomasmore.be</a>
+                    </li>
+                    <li>Telefoon: +324********</li>
+                    <li>Adres: ******** ** 2360 Oud-Turnhout</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="voornaam" class="form-label">Voornaam</label>
+                            <input type="text" class="form-control" id="voornaam" placeholder="Voornaam">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="voornaam" class="form-label">Familienaam</label>
+                            <input type="text" class="form-control" id="familienaam" placeholder="Familienaam">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="voorbeeld@gmail.com">
+                            <div id="emailHelp" class="form-text">Email wordt niet gedeeld</div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Wachtwoord</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Wachtwoord">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Commentaar (optioneel)</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="professioneel"
+                            value="option1" checked>
+                        <label class="form-check-label" for="professioneel">
+                            Professioneel
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="informeel"
+                            value="option2">
+                        <label class="form-check-label" for="informeel">
+                            Informeel
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="andere" value="option2">
+                        <label class="form-check-label" for="andere">
+                            Andere
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
+                <svg class="bi" width="30" height="24" aria-hidden="true">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2025 Demian Hendrix</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d5a0711a16.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
